@@ -1,0 +1,351 @@
+body {
+  margin: 0;
+  font-family: "Montserrat" !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-mon{
+  font-family: "Montserrat";
+}
+
+.ser-font{
+  
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.ser-txt{
+  color: #050706;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    /* 177.778% */
+}
+
+.ser-para{
+  color: #68737F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+}
+
+.home-font {
+  font-optical-sizing: auto;
+  font-size: 48px;
+  font-weight: 700;
+  font-style: normal;
+  color: #3E3E3E;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-top: 30px !important;
+}
+
+.home-font-1 {
+  color: #616161;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    padding-bottom: 20px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#btn-1{
+  width: 20%;
+  color: #666;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+
+}
+
+#btn-1:hover {
+  background-color: #EB9D00 !important;
+  color: black;
+  box-shadow: 5px 5px;
+}
+
+#inf{
+  background-color:#FFEDC9;
+  margin-top: 35px;
+  width: 100%;
+}
+
+.inf-cont{
+padding: 22px 50px !important;
+}
+
+.inf-txt {
+    color: #050706;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.inf-para {
+    color: #050706;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    /* 177.778% */
+}
+
+.navbar-toggler-icon.open {
+  background-image: none;
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.navbar-toggler-icon.open::before,
+.navbar-toggler-icon.open::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transform-origin: center;
+}
+
+.navbar-toggler-icon.open::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.navbar-toggler-icon.open::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.small-screen-menu {
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  z-index: 1050;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.small-screen-menu a {
+  display: block;
+  padding: 5px 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+.small-screen-menu a:hover {
+  background-color: #f8f9fa;
+}
+
+
+#drop{
+  top: 51px;
+  right: 46px;
+  display: block;
+}
+
+.sli-head{
+  color: #000;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sli-arr:hover{
+background-color: #EB9D00 !important;
+}
+
+.sli-title{
+    color: #050706;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    /* line-height: 28px; */
+    /* 155.556% */
+}
+
+
+.fif-txt-1{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.fif-para-1{
+  color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    /* 160% */
+}
+
+.fif-btn{
+    color: #FFF;
+    font-family: Montserrat !important;
+    font-size: 16.66px !important;
+    font-style: normal;
+    font-weight: 500 !important;
+    line-height: 32px !important;
+}
+
+.fif-btn:hover{
+  background-color: #EB9D00 !important;
+  color: #000 !important;
+  box-shadow: 5px 5px #808080;
+
+}
+
+.btm-txt{
+  color: #050706;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.btm-cont-head{
+  color: #050706;
+    font-family: Montserrat;
+    font-size: 24.88px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.btm-cont-para{
+  color: #050706;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    /* 200% */
+    
+}
+
+.image-container:hover .overlay {
+  opacity: 1 !important;
+}
+
+.sli-butt{
+  color: #000;
+    text-align: center;
+  font-family: Montserrat !important;
+    font-size: 16px !important;
+    font-style: normal;
+    font-weight: 500 !important;
+    line-height: 32px !important  ;
+    /* 200% */
+    letter-spacing: -0.32px;
+}
+
+.cont-head{
+  color: #000;
+    font-family: Montserrat;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.cont-para{
+  color: #616161;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    /* 160% */
+}
+
+#home-img-1{
+  width: 200px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #btn-1 {
+      width: 65%;
+    }
+
+  .home-font {
+    margin-top: 10px !important;
+    font-size: 30px;
+    }
+
+    .home-font-1 {
+      font-size: 15px;
+      line-height: 22px;
+  }
+
+  .home-img{
+    height: 34px !important;
+  }
+
+    .fif-btn {
+      width: 62% !important;
+    }
+
+        #home-img-1 {
+          margin-top: 46px !important;
+        }
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #btn-1 {
+      width: 50%;
+    }
+  .fif-btn {
+    width: 62% !important;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #btn-1 {
+      width: 50%;
+    }
+         .fif-btn {
+           width: 62% !important;
+         }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .fif-btn {
+      width: 45% !important;
+    }
+  
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .fif-btn {
+      width: 45% !important;
+    }
+  
+}
