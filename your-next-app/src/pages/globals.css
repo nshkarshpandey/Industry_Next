@@ -71,7 +71,7 @@ code {
 }
 
 #btn-1:hover {
-  background-color: #EB9D00 !important;
+  background-color: #D68E00 !important;
   color: black;
   box-shadow: 5px 5px;
 }
@@ -166,7 +166,7 @@ padding: 22px 50px !important;
 }
 
 .sli-arr:hover{
-background-color: #EB9D00 !important;
+background-color: #D68E00 !important;
 }
 
 .sli-title{
@@ -209,7 +209,7 @@ background-color: #EB9D00 !important;
 }
 
 .fif-btn:hover{
-  background-color: #EB9D00 !important;
+  background-color: #D68E00 !important;
   color: #000 !important;
   box-shadow: 5px 5px #808080;
 
@@ -283,6 +283,67 @@ background-color: #EB9D00 !important;
   width: 200px;
 }
 
+.small-screen-menu {
+  top: 100%;
+  /* Align dropdown below the navbar */
+  right: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.navbar-toggler {
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.navbar-toggler .close-icon {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.dropdown-menu {
+  border-radius: 8px;
+  padding: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 10px 15px;
+  text-align: left;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+.navbar-toggler.open {
+  color: #000;
+}
+
+.navbar-toggler-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+.navbar-toggler.open .navbar-toggler-icon {
+  background-color: transparent;
+}
+
+.dropdown-item.active{
+  background-color: #D68E00 !important;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   #btn-1 {

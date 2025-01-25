@@ -7,7 +7,7 @@ function Services() {
   return (
     <div className="py-5" id="ser" style={{ backgroundColor: "#FFFDF8" }}>
   <h2 className="text-center mb-5 font-mon ser-font">
-    Our <span style={{ color: "#EB9D00" }}>Services</span>
+    Our <span style={{ color: "#D68E00" }}>Services</span>
   </h2>
   <div className="container font-mon">
     <div className="row text-center">
@@ -15,6 +15,9 @@ function Services() {
         <div className="card border-0 h-100 p-3" style={{ backgroundColor: "#FFFDF8" }}>
           <div className="d-flex justify-content-center align-items-center mb-3">
             <Image
+           
+              width={80} 
+              height={80}
               src={"/images/ser-img-1.png"}
               className="rounded-circle"
               alt="Service 1"
@@ -33,6 +36,9 @@ function Services() {
        <div className="card border-0 h-100 p-3" style={{ backgroundColor: "#FFFDF8" }}>
           <div className="d-flex justify-content-center align-items-center mb-3">
             <Image
+
+              width={80} 
+              height={80}
               src={"/images/ser-img-2.png"}
               className="rounded-circle"
               alt="Service 2"
@@ -51,10 +57,12 @@ function Services() {
         <div className="card border-0 h-100 p-3" style={{ backgroundColor: "#FFFDF8" }}>
           <div className="d-flex justify-content-center align-items-center mb-3">
             <Image
+              width={80} 
+              height={80} 
               src={"/images/ser-img-3.png"}
               className="rounded-circle"
               alt="Service 3"
-              style={{ width: "80px", height: "80px" }}
+              style={{ width: "80px" , height: "80px" }}
             />
           </div>
           <div className="card-body">

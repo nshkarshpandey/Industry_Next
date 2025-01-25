@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import Image from 'next/image';
+import Image from "next/image";
 
 const Header = () => {
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
 
   // Redirect the base path to "/home" if at the root
-  React.useEffect(() => {
+  useEffect(() => {
     if (router.pathname === "/") {
       router.replace("/home");
     }
@@ -43,44 +43,62 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container d-flex justify-content-between align-items-center">
           <Link href="/home" className="navbar-brand">
-            <Image src="/images/logo.png" alt="Logo" style={{ height: "40px" }} className="home-img" />
-
+            <Image
+              src="/images/logo.png"
+              alt="Logo"
+              width={270}
+              height={40}
+              className="home-img"
+              unoptimized
+            />
           </Link>
 
           <button
-            className="navbar-toggler d-lg-none"
+            className={`navbar-toggler d-lg-none ${menuOpen ? "open" : ""}`}
             type="button"
             onClick={toggleMenu}
             aria-expanded={menuOpen}
             aria-label="Toggle navigation"
           >
-            <span className={`navbar-toggler-icon ${menuOpen ? "open" : ""}`}></span>
+            {menuOpen ? (
+              <span className="close-icon">&times;</span>
+            ) : (
+              <span className="navbar-toggler-icon"></span>
+            )}
           </button>
 
           {menuOpen && (
-            <div className="dropdown-menu dropdown-menu-end position-absolute mt-2 small-screen-menu">
-              <Link href="/home" className={getNavLinkClass("/home")} onClick={() => setMenuOpen(false)}>
+            <div className="dropdown-menu show dropdown-menu-end position-absolute mt-2 small-screen-menu">
+              <Link
+                href="/home"
+                className={`${getNavLinkClass("/home")} dropdown-item`}
+                onClick={() => setMenuOpen(false)}
+              >
                 Home
               </Link>
               {!isContactPage && (
                 <>
-                  <button
-                    className="nav-link bg-transparent border-0"
-                    style={{ paddingLeft: "11px" }}
+                  <Link
+                    href="/home#about"
+                    className="dropdown-item"
                     onClick={() => scrollToSection("about")}
                   >
                     About
-                  </button>
-                  <button
-                    className="nav-link bg-transparent border-0"
-                    style={{ paddingLeft: "11px" }}
+                  </Link>
+                  <Link
+                    href="/home#services"
+                    className="dropdown-item"
                     onClick={() => scrollToSection("services")}
                   >
                     Services
-                  </button>
+                  </Link>
                 </>
               )}
-              <Link href="/contact" className={getNavLinkClass("/contact")} onClick={() => setMenuOpen(false)}>
+              <Link
+                href="/contact"
+                className={`${getNavLinkClass("/contact")} dropdown-item`}
+                onClick={() => setMenuOpen(false)}
+              >
                 Contact
               </Link>
             </div>

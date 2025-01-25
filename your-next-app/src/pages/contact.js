@@ -57,7 +57,7 @@ export default function Contact() {
         {/* Left Section: Get in Touch and Form */}
         <div className="col-md-6">
           <h1 className="mb-4 cont-head">
-            Get in <span style={{ color: '#EB9D00' }}>Touch</span>
+            Get in <span style={{ color: '#D68E00' }}>Touch</span>
           </h1>
           <p className="cont-para">
             Reach out to us for electrical transformer solutions! Share your
@@ -156,7 +156,11 @@ export default function Contact() {
                   marginRight: '10px',
                 }}
               >
-                <Image src="/images/pho.png" alt="Phone" style={{ height: '24px', width: '24px' }} />
+                <Image src="/images/pho.png" 
+               
+              width={24} 
+              height={24} 
+              alt="Phone" style={{ height: '24px', width: '24px' }} />
               </div>
               <div>
                 <p style={{ margin: 0, color: '#f4a71f', fontWeight: 'bold' }}>Phone</p>
@@ -174,7 +178,11 @@ export default function Contact() {
                   marginRight: '10px',
                 }}
               >
-                <Image src="/images/mai.png" alt="Email" style={{ height: '24px', width: '24px' }} />
+                <Image src="/images/mai.png" 
+                
+              width={24} 
+              height={24} 
+              alt="Email" style={{ height: '24px', width: '24px' }} />
               </div>
               <div>
                 <p style={{ margin: 0, color: '#f4a71f', fontWeight: 'bold' }}>Email</p>
@@ -200,7 +208,7 @@ export default function Contact() {
             height="400"
             style={{ border: '0', borderRadius: '8px' }}
             allowfullscreen=""
-            loading="lazy"
+            // loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>

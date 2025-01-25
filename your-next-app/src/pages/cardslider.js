@@ -109,7 +109,7 @@ const CardSlider = () => {
   return (
     <div className="container py-5">
       <p className="mb-5 sli-head">
-        Our Electrical <span style={{ color: "#EB9D00" }}>Products</span>
+        Our Electrical <span style={{ color: "#D68E00" }}>Products</span>
       </p>
       <Carousel
         responsive={responsive}
@@ -131,7 +131,10 @@ const CardSlider = () => {
                 src={product.image}
                 alt={product.title}
                 className="card-img-top"
-                style={{ height: "200px", objectFit: "cover" }}
+                style={{ height: "200px", objectFit: "cover", width: "auto", }}
+                layout="responsive" 
+              width={16} 
+              height={9} 
               />
               <div
                 className="overlay d-flex align-items-center justify-content-center position-absolute top-0 start-0 w-100 h-100"

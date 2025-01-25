@@ -11,9 +11,14 @@ function Info() {
           {/* Left Side: Image */}
           <div className="col-md-6 d-flex justify-content-center">
             <Image
+            layout="responsive" 
+              width={16} 
+              height={9} 
               src={"/images/about.png"}// Replace with your image path
               alt="About Us"
               className="img-fluid"
+              style={{width: "auto" , height : "auto"}}
+              
             />
           </div>
 

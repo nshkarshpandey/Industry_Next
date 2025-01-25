@@ -15,7 +15,7 @@ const Home = () => {
         <div className="row w-100">
           <div className="col-md-6 d-flex flex-column home-font">
             <p className="font-mon">
-              Enquire Now for <span style={{ color: "#EB9D00" }}>Power</span> Solutions!
+              Enquire Now for <span style={{ color: "#D68E00" }}>Power</span> Solutions!
             </p>
             <p className="home-font-1">
               Powering your world with reliable, BIS-certified transformers.
@@ -23,11 +23,26 @@ const Home = () => {
             <Button variant="outline-secondary" id="btn-1" href="tel:9419140984">
               Enquire Now
             </Button>
-            <Image src="/images/home-img-1.png" alt="" id="home-img-1" style={{ width: "100%", maxWidth: "500px", alignSelf: "left", marginTop: "80px" }} />
+            <Image src="/images/home-img-1.png" alt="" 
+              layout="responsive" 
+              width={16} 
+              height={9} 
+            id="home-img-1" 
+            style={{ 
+              width: "100%", 
+              maxWidth: "500px", 
+              alignSelf: "left", 
+              marginTop: "80px", 
+              height : "auto", 
+            }} />
           </div>
 
           <div className="col-md-6 d-flex justify-content-center align-items-center pt-2">
-            <Image src="/images/banner.png" alt="" id="home-img-1" style={{ width: "100%", maxWidth: "500px", alignSelf: "left", marginTop: "80px" }} />
+            <Image src="/images/banner.png" alt="" id="home-img-1" 
+            layout="responsive" 
+              width={16} 
+              height={9} 
+              style={{ width: "100%", maxWidth: "500px", alignSelf: "left", height : "auto" }} />
           </div>
         </div>
       </div>

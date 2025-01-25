@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import emailjs from 'emailjs-com'; // Import EmailJS
+import emailjs from 'emailjs-com'; // Import EmailJS
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -58,7 +58,7 @@ function Fifth() {
           <div className="col-md-6">
             <p className="fif-txt-1">Accurate Industries welcomes you!!</p>
             <p className="fif-para-1">
-              Share your E-mail & Contact No. — let &apos s team up! 🚀
+              Share your E-mail & Contact No. — let&apos;s team up! 🚀
             </p>
           </div>
 

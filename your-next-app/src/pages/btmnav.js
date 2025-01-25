@@ -55,7 +55,7 @@ function Btmnav() {
             height="200" 
             style={{border:"0", borderRadius :"8px"}}
             allowfullscreen="" 
-            loading="lazy" 
+            // loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
