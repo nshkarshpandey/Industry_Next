@@ -160,6 +160,7 @@ export default function Contact() {
                
               width={24} 
               height={24} 
+               loading="eager"
               alt="Phone" style={{ height: '24px', width: '24px' }} />
               </div>
               <div>
@@ -182,6 +183,7 @@ export default function Contact() {
                 
               width={24} 
               height={24} 
+               loading="eager"
               alt="Email" style={{ height: '24px', width: '24px' }} />
               </div>
               <div>

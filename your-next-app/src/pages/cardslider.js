@@ -133,8 +133,10 @@ const CardSlider = () => {
                 className="card-img-top"
                 style={{ height: "200px", objectFit: "cover", width: "auto", }}
                 layout="responsive" 
+               
               width={16} 
               height={9} 
+               loading="eager"
               />
               <div
                 className="overlay d-flex align-items-center justify-content-center position-absolute top-0 start-0 w-100 h-100"

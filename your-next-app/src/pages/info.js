@@ -11,6 +11,7 @@ function Info() {
           {/* Left Side: Image */}
           <div className="col-md-6 d-flex justify-content-center">
             <Image
+             loading="eager"
             layout="responsive" 
               width={16} 
               height={9} 

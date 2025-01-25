@@ -18,6 +18,7 @@ function Services() {
            
               width={80} 
               height={80}
+               loading="eager"
               src={"/images/ser-img-1.png"}
               className="rounded-circle"
               alt="Service 1"
@@ -36,7 +37,7 @@ function Services() {
        <div className="card border-0 h-100 p-3" style={{ backgroundColor: "#FFFDF8" }}>
           <div className="d-flex justify-content-center align-items-center mb-3">
             <Image
-
+               loading="eager"
               width={80} 
               height={80}
               src={"/images/ser-img-2.png"}
@@ -57,6 +58,7 @@ function Services() {
         <div className="card border-0 h-100 p-3" style={{ backgroundColor: "#FFFDF8" }}>
           <div className="d-flex justify-content-center align-items-center mb-3">
             <Image
+             loading="eager"
               width={80} 
               height={80} 
               src={"/images/ser-img-3.png"}

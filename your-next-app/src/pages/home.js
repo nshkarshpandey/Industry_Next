@@ -28,6 +28,7 @@ const Home = () => {
               width={16} 
               height={9} 
             id="home-img-1" 
+            loading="eager"
             style={{ 
               width: "100%", 
               maxWidth: "500px", 
@@ -42,6 +43,7 @@ const Home = () => {
             layout="responsive" 
               width={16} 
               height={9} 
+               loading="eager"
               style={{ width: "100%", maxWidth: "500px", alignSelf: "left", height : "auto" }} />
           </div>
         </div>

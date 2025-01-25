@@ -49,7 +49,7 @@ const Header = () => {
               width={270}
               height={40}
               className="home-img"
-              unoptimized
+              loading="eager"
             />
           </Link>
 
