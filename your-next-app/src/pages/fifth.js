@@ -58,7 +58,7 @@ function Fifth() {
           <div className="col-md-6">
             <p className="fif-txt-1">Accurate Industries welcomes you!!</p>
             <p className="fif-para-1">
-              Share your E-mail & Contact No. — let's team up! 🚀
+              Share your E-mail & Contact No. — let &apos s team up! 🚀
             </p>
           </div>
 

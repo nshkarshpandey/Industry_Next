@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Image from 'next/image';
 
 const Header = () => {
   const router = useRouter();
@@ -42,7 +43,7 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container d-flex justify-content-between align-items-center">
           <Link href="/home" className="navbar-brand">
-            <img src="/images/logo.png" alt="Logo" style={{ height: "40px" }} className="home-img" />
+            <Image src="/images/logo.png" alt="Logo" style={{ height: "40px" }} className="home-img" />
 
           </Link>
 

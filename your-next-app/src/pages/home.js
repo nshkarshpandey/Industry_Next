@@ -6,6 +6,7 @@ import Info from "./info";
 import Fifth from "./fifth";
 import Btmnav from "./btmnav";
 import Button from "react-bootstrap/Button";
+import Image from 'next/image';
 
 const Home = () => {
   return (
@@ -22,11 +23,11 @@ const Home = () => {
             <Button variant="outline-secondary" id="btn-1" href="tel:9419140984">
               Enquire Now
             </Button>
-            <img src="/images/home-img-1.png" alt="" id="home-img-1" style={{ width: "100%", maxWidth: "500px", alignSelf: "left", marginTop: "80px" }} />
+            <Image src="/images/home-img-1.png" alt="" id="home-img-1" style={{ width: "100%", maxWidth: "500px", alignSelf: "left", marginTop: "80px" }} />
           </div>
 
           <div className="col-md-6 d-flex justify-content-center align-items-center pt-2">
-            <img src="/images/banner.png" alt="" id="home-img-1" style={{ width: "100%", maxWidth: "500px", alignSelf: "left", marginTop: "80px" }} />
+            <Image src="/images/banner.png" alt="" id="home-img-1" style={{ width: "100%", maxWidth: "500px", alignSelf: "left", marginTop: "80px" }} />
           </div>
         </div>
       </div>

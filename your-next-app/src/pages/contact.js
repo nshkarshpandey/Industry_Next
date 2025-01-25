@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import emailjs from 'emailjs-com'; // Import EmailJS
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Image from 'next/image';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -18,36 +19,37 @@ export default function Contact() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+ const handleSubmit = (e) => {
+  e.preventDefault();
 
-    // EmailJS template parameters
-    const templateParams = {
-      name: formData.name,
-      email: formData.email,
-      phone: formData.phone,
-    };
-
-    // Sending email using EmailJS
-    emailjs
-      .send(
-        'service_d9b37wc', // Replace with your EmailJS service ID
-        'template_j70jglf', // Replace with your EmailJS template ID
-        templateParams,
-        'gU60jRdet83OlCBMT' // Replace with your EmailJS public key
-      )
-      .then(
-        (response) => {
-          setSuccessMessage('Your message has been sent successfully!');
-          setErrorMessage('');
-          setFormData({ name: '', email: '', phone: '' }); // Reset form fields
-        },
-        (error) => {
-          setErrorMessage('Failed to send your message. Please try again.');
-        }
-      );
+  // EmailJS template parameters
+  const templateParams = {
+    name: formData.name,
+    email: formData.email,
+    phone: formData.phone,
   };
 
+  // Sending email using EmailJS
+  emailjs
+    .send(
+      'service_d9b37wc', // Replace with your EmailJS service ID
+      'template_j70jglf', // Replace with your EmailJS template ID
+      templateParams,
+      'gU60jRdet83OlCBMT' // Replace with your EmailJS public key
+    )
+    .then(
+      () => {
+        // Handle success without using the 'response' variable
+        setSuccessMessage('Your message has been sent successfully!');
+        setErrorMessage('');
+        setFormData({ name: '', email: '', phone: '' }); // Reset form fields
+      },
+      () => {
+        // Handle error without using the 'error' variable
+        setErrorMessage('Failed to send your message. Please try again.');
+      }
+    );
+};
   return (
     <div className="container py-5">
       {/* Row for Top Layout */}
@@ -154,7 +156,7 @@ export default function Contact() {
                   marginRight: '10px',
                 }}
               >
-                <img src="/images/pho.png" alt="Phone" style={{ height: '24px', width: '24px' }} />
+                <Image src="/images/pho.png" alt="Phone" style={{ height: '24px', width: '24px' }} />
               </div>
               <div>
                 <p style={{ margin: 0, color: '#f4a71f', fontWeight: 'bold' }}>Phone</p>
@@ -172,7 +174,7 @@ export default function Contact() {
                   marginRight: '10px',
                 }}
               >
-                <img src="/images/mai.png" alt="Email" style={{ height: '24px', width: '24px' }} />
+                <Image src="/images/mai.png" alt="Email" style={{ height: '24px', width: '24px' }} />
               </div>
               <div>
                 <p style={{ margin: 0, color: '#f4a71f', fontWeight: 'bold' }}>Email</p>

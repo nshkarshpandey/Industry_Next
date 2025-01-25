@@ -1,6 +1,7 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import info_img from '../../public/images/about.png';
+import Image from 'next/image';
+
 
 function Info() {
   return (
@@ -9,7 +10,7 @@ function Info() {
         <div className="row align-items-center">
           {/* Left Side: Image */}
           <div className="col-md-6 d-flex justify-content-center">
-            <img
+            <Image
               src={"/images/about.png"}// Replace with your image path
               alt="About Us"
               className="img-fluid"

@@ -3,12 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import Sli_img_1 from "../../public/images/prod-1.png";
-import Sli_img_2 from "../../public/images/prod-2.png";
-import Sli_img_3 from "../../public/images/prod-3.png";
-import Sli_img_4 from "../../public/images/prod-4.png";
-import Sli_img_5 from "../../public/images/prod-5.png";
-import Sli_img_6 from "../../public/images/prod-6.png";
+import Image from 'next/image';
+
 import Button from 'react-bootstrap/Button';
 
 const CardSlider = () => {
@@ -131,7 +127,7 @@ const CardSlider = () => {
           <div key={index} className="card mx-2 position-relative" style={{ border: "none" }}>
             {/* Image with Overlay */}
             <div className="image-container position-relative" style={{ overflow: "hidden" }}>
-              <img
+              <Image
                 src={product.image}
                 alt={product.title}
                 className="card-img-top"

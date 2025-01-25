@@ -1,8 +1,7 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import img_1 from '../../public/images/ser-img-1.png';
-import img_2 from '../../public/images/ser-img-1.png';
-import img_3 from '../../public/images/ser-img-1.png';
+import Image from 'next/image';
+
 
 function Services() {
   return (
@@ -15,7 +14,7 @@ function Services() {
       <div className="col-md-4 mb-4">
         <div className="card border-0 h-100 p-3" style={{ backgroundColor: "#FFFDF8" }}>
           <div className="d-flex justify-content-center align-items-center mb-3">
-            <img
+            <Image
               src={"/images/ser-img-1.png"}
               className="rounded-circle"
               alt="Service 1"
@@ -33,7 +32,7 @@ function Services() {
       <div className="col-md-4 mb-4">
        <div className="card border-0 h-100 p-3" style={{ backgroundColor: "#FFFDF8" }}>
           <div className="d-flex justify-content-center align-items-center mb-3">
-            <img
+            <Image
               src={"/images/ser-img-2.png"}
               className="rounded-circle"
               alt="Service 2"
@@ -51,7 +50,7 @@ function Services() {
       <div className="col-md-4 mb-4">
         <div className="card border-0 h-100 p-3" style={{ backgroundColor: "#FFFDF8" }}>
           <div className="d-flex justify-content-center align-items-center mb-3">
-            <img
+            <Image
               src={"/images/ser-img-3.png"}
               className="rounded-circle"
               alt="Service 3"
