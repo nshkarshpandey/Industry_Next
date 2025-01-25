@@ -360,6 +360,10 @@ background-color: #D68E00 !important;
       line-height: 22px;
   }
 
+  .home-img{
+    height: 34px !important;
+    width: auto !important;
+  }
 
     .fif-btn {
       width: 62% !important;
