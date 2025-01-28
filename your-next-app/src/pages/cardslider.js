@@ -109,7 +109,7 @@ const CardSlider = () => {
   return (
     <div className="container py-5">
       <p className="mb-5 sli-head">
-        Our Electrical <span style={{ color: "#D68E00" }}>Products</span>
+        Our Electrical <span style={{ color: "#B48230" }}>Products</span>
       </p>
       <Carousel
         responsive={responsive}

@@ -57,7 +57,7 @@ export default function Contact() {
         {/* Left Section: Get in Touch and Form */}
         <div className="col-md-6">
           <h1 className="mb-4 cont-head">
-            Get in <span style={{ color: '#D68E00' }}>Touch</span>
+            Get in <span style={{ color: '#B48230' }}>Touch</span>
           </h1>
           <p className="cont-para">
             Reach out to us for electrical transformer solutions! Share your

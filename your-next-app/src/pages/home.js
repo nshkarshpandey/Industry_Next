@@ -1,65 +1,20 @@
-import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import CardSlider from "./cardslider";
-import Services from "./services";
-import Info from "./info";
-import Fifth from "./fifth";
-import Btmnav from "./btmnav";
-import Button from "react-bootstrap/Button";
-import Image from 'next/image';
+import React, { useEffect, useState } from "react";
+import LargeHome from "./LargeHome";
+import SmallHome from "./SmallHome";
 
 const Home = () => {
-  return (
-    <div className="container-fluid">
-      <div className="container d-flex align-items-center pt-4" style={{ marginBottom: "50px" }}>
-        <div className="row w-100">
-          <div className="col-md-6 d-flex flex-column home-font">
-            <p className="font-mon">
-              Enquire Now for <span style={{ color: "#D68E00" }}>Power</span> Solutions!
-            </p>
-            <p className="home-font-1">
-              Powering your world with reliable, BIS-certified transformers.
-            </p>
-            <Button variant="outline-secondary" id="btn-1" href="tel:9419140984">
-              Enquire Now
-            </Button>
-            <Image src="/images/home-img-1.png" alt="" 
-              layout="responsive" 
-              width={16} 
-              height={9} 
-            id="home-img-1" 
-            loading="eager"
-            style={{ 
-              width: "100%", 
-              maxWidth: "500px", 
-              alignSelf: "left", 
-              marginTop: "80px", 
-              height : "auto", 
-            }} />
-          </div>
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
-          <div className="col-md-6 d-flex justify-content-center align-items-center pt-2">
-            <Image src="/images/banner.png" alt="" id="home-img-1" 
-            layout="responsive" 
-              width={16} 
-              height={9} 
-               loading="eager"
-              style={{ width: "100%", maxWidth: "500px", alignSelf: "left", height : "auto" }} />
-          </div>
-        </div>
-      </div>
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 600);
+    };
+    handleResize(); // Initialize on load
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
-      <section id="services" className="py-5 bg-light">
-        <Services />
-      </section>
-      <section id="about" className="py-5">
-        <Info />
-      </section>
-      <CardSlider />
-      <Fifth />
-      <Btmnav />
-    </div>
-  );
+  return isSmallScreen ? <SmallHome /> : <LargeHome />;
 };
 
 export default Home;

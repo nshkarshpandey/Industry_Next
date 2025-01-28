@@ -7,7 +7,7 @@ function Services() {
   return (
     <div className="py-5" id="ser" style={{ backgroundColor: "#FFFDF8" }}>
   <h2 className="text-center mb-5 font-mon ser-font">
-    Our <span style={{ color: "#D68E00" }}>Services</span>
+    Our <span style={{ color: "#B48230" }}>Services</span>
   </h2>
   <div className="container font-mon">
     <div className="row text-center">
