@@ -2,6 +2,11 @@ import React, { useEffect, useState } from "react";
 import LargeHome from "./LargeHome";
 import SmallHome from "./SmallHome";
 
+
+
+
+
+
 const Home = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 

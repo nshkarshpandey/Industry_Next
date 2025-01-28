@@ -1,13 +1,18 @@
-body {
+* {
+  font-family: 'Montserrat' !important;
+}
+
+
+html , body {
   margin: 0;
-  font-family: "Montserrat" !important;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.font-mon{
+/* .font-mon{
   font-family: "Montserrat";
-}
+} */
 
 .ser-font{
   
@@ -158,7 +163,7 @@ padding: 22px 50px !important;
 
 .sli-head{
   color: #000;
-    font-family: Montserrat;
+    /* font-family: Montserrat; */
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -171,7 +176,7 @@ background-color: #D68E00 !important;
 
 .sli-title{
     color: #050706;
-    font-family: Montserrat;
+    /* font-family: Montserrat; */
     font-size: 13px;
     font-style: normal;
     font-weight: 500;
@@ -182,7 +187,7 @@ background-color: #D68E00 !important;
 
 .fif-txt-1{
     color: #FFF;
-    font-family: Montserrat;
+    /* font-family: Montserrat; */
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -191,7 +196,7 @@ background-color: #D68E00 !important;
 
 .fif-para-1{
   color: #FFF;
-    font-family: Montserrat;
+    /* font-family: Montserrat; */
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -201,7 +206,7 @@ background-color: #D68E00 !important;
 
 .fif-btn{
     color: #FFF;
-    font-family: Montserrat !important;
+    /* font-family: Montserrat !important; */
     font-size: 16.66px !important;
     font-style: normal;
     font-weight: 500 !important;
@@ -217,7 +222,7 @@ background-color: #D68E00 !important;
 
 .btm-txt{
   color: #050706;
-    font-family: Montserrat;
+    /* font-family: Montserrat; */
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -226,7 +231,7 @@ background-color: #D68E00 !important;
 
 .btm-cont-head{
   color: #050706;
-    font-family: Montserrat;
+    /* font-family: Montserrat; */
     font-size: 24.88px;
     font-style: normal;
     font-weight: 500;
@@ -235,7 +240,7 @@ background-color: #D68E00 !important;
 
 .btm-cont-para{
   color: #050706;
-    font-family: Montserrat;
+    /* font-family: Montserrat; */
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -251,7 +256,7 @@ background-color: #D68E00 !important;
 .sli-butt{
   color: #000;
     text-align: center;
-  font-family: Montserrat !important;
+  /* font-family: Montserrat !important; */
     font-size: 16px !important;
     font-style: normal;
     font-weight: 500 !important;
@@ -262,7 +267,7 @@ background-color: #D68E00 !important;
 
 .cont-head{
   color: #000;
-    font-family: Montserrat;
+    /* font-family: Montserrat; */
     font-size: 54px;
     font-style: normal;
     font-weight: 700;
@@ -271,7 +276,7 @@ background-color: #D68E00 !important;
 
 .cont-para{
   color: #616161;
-    font-family: Montserrat;
+    /* font-family: Montserrat; */
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
