@@ -11,7 +11,7 @@ import Btmnav from "./btmnav";
 
 const SmallHome = () => {
   return (
-    <div className="container-fluid bg-home-s">
+   <div className="container-fluid">
       <div
         className="container d-flex align-items-center pt-4"
         style={{ marginBottom: "50px" }}
@@ -52,7 +52,7 @@ const SmallHome = () => {
 
           <div className="col-md-6 d-flex justify-content-center align-items-center pt-2">
             <Image
-              src="/images/banner-2.png"
+              src="/images/banner.png"
               alt=""
               id="home-img-1"
               layout="responsive"
