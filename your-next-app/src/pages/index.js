@@ -2,7 +2,7 @@
 import React from "react";
 import Header from "../../components/header";
 import Home from "../pages/home";
-import { Montserrat } from '@next/font/google';
+import { Montserrat } from 'next/font/google';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
