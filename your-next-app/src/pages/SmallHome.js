@@ -58,7 +58,7 @@ const SmallHome = () => {
               layout="responsive"
               width={16}
               height={9}
-              loading="eager"
+             
               style={{
                 width: "100%",
                 maxWidth: "500px",

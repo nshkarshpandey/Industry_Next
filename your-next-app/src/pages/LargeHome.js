@@ -38,7 +38,7 @@ const LargeHome = () => {
               width={16}
               height={9}
               id="home-img-1"
-              loading="eager"
+              
               style={{
                 width: "100%",
                 maxWidth: "500px",
