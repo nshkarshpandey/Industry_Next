@@ -3,7 +3,7 @@ import React from "react";
 import Header from "../../components/header";
 import Home from "../pages/home";
 import { Montserrat } from 'next/font/google';
-import PopupForm from "../../components/PopupForm";
+
 
 const montserrat = Montserrat({
   subsets: ['latin'],

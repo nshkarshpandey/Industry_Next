@@ -1,6 +1,6 @@
 "use client"; // Required for useState and useEffect in Next.js (App Router)
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import styles from "./popupform.module.css";
 
 const PopupForm = ({ onClose }) => {
