@@ -3,6 +3,7 @@ import React from "react";
 import Header from "../../components/header";
 import Home from "../pages/home";
 import { Montserrat } from 'next/font/google';
+import PopupForm from "../../components/PopupForm";
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -14,8 +15,11 @@ export default function Index() {
   return (
     <>
     <main className={montserrat.className}>
+
+      {/* <PopupForm /> */}
       <Header />
       <Home />
+
     </main>
     </>
   );
