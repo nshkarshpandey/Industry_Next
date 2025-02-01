@@ -1,18 +1,22 @@
+"use client";
+
+
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
 
 const Header = () => {
+  const pathname = usePathname();
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
 
   // Redirect the base path to "/home" if at the root
   useEffect(() => {
-    if (router.pathname === "/") {
+    if (pathname === "/") {
       router.replace("/home");
     }
-  }, [router]);
+  }, [pathname, router]);
 
   // Toggle the dropdown menu
   const toggleMenu = () => {
@@ -20,8 +24,8 @@ const Header = () => {
   };
 
   // Scroll to section
-  const scrollToSection = (sectionId) => {
-    if (router.pathname === "/home") {
+  const scrollToSection = (sectionId: string) => {
+    if (pathname === "/home") {
       const section = document.getElementById(sectionId);
       if (section) {
         section.scrollIntoView({ behavior: "smooth" });
@@ -32,11 +36,11 @@ const Header = () => {
     setMenuOpen(false); // Close the menu on small screens
   };
 
-  const getNavLinkClass = (path) => {
-    return router.pathname === path ? "nav-link fw-bold active" : "nav-link";
+  const getNavLinkClass = (path: string) => {
+    return pathname === path ? "nav-link fw-bold active" : "nav-link";
   };
 
-  const isContactPage = router.pathname === "/contact";
+  const isContactPage = pathname === "/contact";
 
   return (
     <header>
@@ -46,8 +50,8 @@ const Header = () => {
             <Image
               src="/images/logo.png"
               alt="Logo"
-              width={270}
-              height={40}
+              width={200}
+              height={30}
               className="home-img"
               loading="eager"
             />

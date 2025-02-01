@@ -3,8 +3,12 @@
 import React, { useState } from "react";
 import styles from "./popupform.module.css";
 
-const PopupForm = ({ onClose }) => {
-  const [isOpen, setIsOpen] = useState(true); // Starts open
+type PopupFormProps = {
+  onClose: () => void;
+};
+
+const PopupForm: React.FC<PopupFormProps> = ({ onClose }) => {
+  const [isOpen, setIsOpen] = useState<boolean>(true); // Starts open
 
   const handleClose = () => {
     setIsOpen(false);
@@ -21,12 +25,12 @@ const PopupForm = ({ onClose }) => {
           <h2>Enquire Now</h2>
           <form>
             <div className={styles.formGroup}>
-              <label>Name</label>
-              <input type="text" placeholder="Enter your name" required />
+              <label htmlFor="name">Name</label>
+              <input id="name" type="text" placeholder="Enter your name" required />
             </div>
             <div className={styles.formGroup}>
-              <label>Number</label>
-              <input type="tel" placeholder="Enter your number" required />
+              <label htmlFor="number">Number</label>
+              <input id="number" type="tel" placeholder="Enter your number" required />
             </div>
             <button type="submit" className={styles.submitBtn}>Submit</button>
           </form>

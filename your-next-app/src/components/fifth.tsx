@@ -1,43 +1,44 @@
-import React, { useState } from 'react';
-import emailjs from 'emailjs-com'; // Import EmailJS
-import 'bootstrap/dist/css/bootstrap.min.css';
+"use client";
 
 
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-function Fifth() {
-  const [email, setEmail] = useState('');
-  const [contactNumber, setContactNumber] = useState('');
-  const [successMessage, setSuccessMessage] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
+const Fifth: React.FC = () => {
+  const [email, setEmail] = useState<string>("");
+  const [contactNumber, setContactNumber] = useState<string>("");
+  const [successMessage, setSuccessMessage] = useState<string>("");
+  const [errorMessage, setErrorMessage] = useState<string>("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     // Prepare data for EmailJS
     const templateParams = {
-      email,
-      contactNumber,
+      email: email,
+      contactNumber: contactNumber,
     };
 
     // Send email using EmailJS
     emailjs
       .send(
-        'service_d9b37wc', // Replace with your EmailJS service ID
-        'template_1sbvepb', // Replace with your EmailJS template ID
+        "service_d9b37wc", // Replace with your EmailJS service ID
+        "template_1sbvepb", // Replace with your EmailJS template ID
         templateParams,
-        'gU60jRdet83OlCBMT' // Replace with your EmailJS public key
+        "gU60jRdet83OlCBMT" // Replace with your EmailJS public key
       )
       .then(
         (response) => {
-          console.log('SUCCESS!', response.status, response.text);
-          setSuccessMessage('Your information was sent successfully!');
-          setErrorMessage('');
-          setEmail('');
-          setContactNumber('');
+          console.log("SUCCESS!", response.status, response.text);
+          setSuccessMessage("Your information was sent successfully!");
+          setErrorMessage("");
+          setEmail("");
+          setContactNumber("");
         },
         (error) => {
-          console.error('FAILED...', error);
-          setErrorMessage('Failed to send your information. Please try again.');
+          console.error("FAILED...", error);
+          setErrorMessage("Failed to send your information. Please try again.");
         }
       );
   };
@@ -47,10 +48,10 @@ function Fifth() {
       <div
         className="container-fluid py-5 position-relative text-white fif-bg"
         style={{
-          backgroundImage: 'url(/images/contact.png)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
+          backgroundImage: "url(/images/contact.png)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       >
         <div className="row align-items-center justify-content-between px-5">
@@ -74,13 +75,13 @@ function Fifth() {
                   onChange={(e) => setEmail(e.target.value)}
                   required
                   style={{
-                    borderRadius: '20px',
-                    padding: '10px 15px',
-                    fontSize: '16px',
-                    border: 'none',
-                    boxShadow: '0 2px 5px rgba(0, 0, 0, 0.2)',
-                    fontFamily: 'Montserrat',
-                    color: '#555',
+                    borderRadius: "20px",
+                    padding: "10px 15px",
+                    fontSize: "16px",
+                    border: "none",
+                    boxShadow: "0 2px 5px rgba(0, 0, 0, 0.2)",
+                    fontFamily: "Montserrat",
+                    color: "#555",
                   }}
                 />
               </div>
@@ -93,13 +94,13 @@ function Fifth() {
                   onChange={(e) => setContactNumber(e.target.value)}
                   required
                   style={{
-                    borderRadius: '20px',
-                    padding: '10px 15px',
-                    fontSize: '16px',
-                    border: 'none',
-                    boxShadow: '0 2px 5px rgba(0, 0, 0, 0.2)',
-                    fontFamily: 'Montserrat',
-                    color: '#555',
+                    borderRadius: "20px",
+                    padding: "10px 15px",
+                    fontSize: "16px",
+                    border: "none",
+                    boxShadow: "0 2px 5px rgba(0, 0, 0, 0.2)",
+                    fontFamily: "Montserrat",
+                    color: "#555",
                   }}
                 />
               </div>
@@ -107,12 +108,12 @@ function Fifth() {
                 type="submit"
                 className="btn btn-dark fif-btn"
                 style={{
-                  width: '40%',
-                  borderRadius: '12px',
-                  fontSize: '16px',
-                  backgroundColor: 'transparent',
-                  border: '1px solid #fff',
-                  color: '#fff',
+                  width: "40%",
+                  borderRadius: "12px",
+                  fontSize: "16px",
+                  backgroundColor: "transparent",
+                  border: "1px solid #fff",
+                  color: "#fff",
                 }}
               >
                 Share Now
@@ -122,9 +123,9 @@ function Fifth() {
               <p
                 className="mt-3"
                 style={{
-                  color: '#28a745',
-                  fontFamily: 'Montserrat',
-                  fontSize: '14px',
+                  color: "#28a745",
+                  fontFamily: "Montserrat",
+                  fontSize: "14px",
                 }}
               >
                 {successMessage}
@@ -134,9 +135,9 @@ function Fifth() {
               <p
                 className="mt-3"
                 style={{
-                  color: '#dc3545',
-                  fontFamily: 'Montserrat',
-                  fontSize: '14px',
+                  color: "#dc3545",
+                  fontFamily: "Montserrat",
+                  fontSize: "14px",
                 }}
               >
                 {errorMessage}
@@ -147,6 +148,6 @@ function Fifth() {
       </div>
     </div>
   );
-}
+};
 
 export default Fifth;

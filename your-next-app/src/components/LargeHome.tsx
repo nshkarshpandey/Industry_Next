@@ -2,16 +2,11 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
 import Image from "next/image";
-import CardSlider from "./cardslider";
-import SmallServices from "./SmallServices";
-import Info from "./info";
-import Fifth from "./fifth";
-import Btmnav from "./btmnav";
+import HeroBanner from './HeroBanner';
 
-
-const SmallHome = () => {
+const LargeHome = () => {
   return (
-   <div className="container-fluid">
+    <div className="">
       <div
         className="container d-flex align-items-center pt-4"
         style={{ marginBottom: "50px" }}
@@ -32,55 +27,35 @@ const SmallHome = () => {
             >
               Enquire Now
             </Button>
-            {/* <Image
+            <Image
               src="/images/home-img-1.png"
               alt=""
               layout="responsive"
               width={16}
               height={9}
               id="home-img-1"
-              loading="eager"
+              
               style={{
+                position : "relative",
+                left: '-51px',
                 width: "100%",
                 maxWidth: "500px",
                 alignSelf: "left",
                 marginTop: "80px",
                 height: "auto",
               }}
-            /> */}
+            />
           </div>
 
           <div className="col-md-6 d-flex justify-content-center align-items-center pt-2">
-            <Image
-              src="/images/banner.png"
-              alt=""
-              id="home-img-1"
-              layout="responsive"
-              width={16}
-              height={9}
-             
-              style={{
-                width: "100%",
-                maxWidth: "500px",
-                alignSelf: "left",
-                height: "auto",
-              }}
-            />
+            <HeroBanner/>
           </div>
         </div>
       </div>
 
-      <section id="services" className="py-5 bg-light">
-        <SmallServices />
-      </section>
-      <section id="about" className="py-5">
-        <Info />
-      </section>
-      <CardSlider />
-      <Fifth />
-      <Btmnav />
+      
     </div>
   );
 };
 
-export default SmallHome;
+export default LargeHome;

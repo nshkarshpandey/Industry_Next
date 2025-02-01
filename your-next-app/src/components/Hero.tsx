@@ -1,13 +1,11 @@
+"use client";
+
+
 import React, { useEffect, useState } from "react";
 import LargeHome from "./LargeHome";
 import SmallHome from "./SmallHome";
 
-
-
-
-
-
-const Home = () => {
+export const Hero = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useEffect(() => {
@@ -22,4 +20,4 @@ const Home = () => {
   return isSmallScreen ? <SmallHome /> : <LargeHome />;
 };
 
-export default Home;
+

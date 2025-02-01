@@ -1,7 +1,9 @@
-* {
-  font-family: 'Montserrat' !important;
-}
+/* globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
 
 html , body {
   margin: 0;
@@ -374,6 +376,8 @@ background-color: #D68E00 !important;
     height: 34px !important;
     width: auto !important;
   }
+
+   
 
     .fif-btn {
       width: 62% !important;

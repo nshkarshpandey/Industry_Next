@@ -1,16 +1,17 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import CardSlider from "./cardslider";
-import Services from "./services";
-import Info from "./info";
-import Fifth from "./fifth";
-import Btmnav from "./btmnav";
 import Button from "react-bootstrap/Button";
 import Image from "next/image";
+// import CardSlider from "./cardslider";
+// import SmallServices from "./SmallServices";
+// import Info from "./info";
+// import Fifth from "./fifth";
+// import Btmnav from "./btmnav";
 
-const LargeHome = () => {
+
+const SmallHome = () => {
   return (
-    <div className="container-fluid">
+   <div className="container-fluid">
       <div
         className="container d-flex align-items-center pt-4"
         style={{ marginBottom: "50px" }}
@@ -31,14 +32,14 @@ const LargeHome = () => {
             >
               Enquire Now
             </Button>
-            <Image
+            {/* <Image
               src="/images/home-img-1.png"
               alt=""
               layout="responsive"
               width={16}
               height={9}
               id="home-img-1"
-              
+              loading="eager"
               style={{
                 width: "100%",
                 maxWidth: "500px",
@@ -46,7 +47,7 @@ const LargeHome = () => {
                 marginTop: "80px",
                 height: "auto",
               }}
-            />
+            /> */}
           </div>
 
           <div className="col-md-6 d-flex justify-content-center align-items-center pt-2">
@@ -57,7 +58,7 @@ const LargeHome = () => {
               layout="responsive"
               width={16}
               height={9}
-              loading="eager"
+             
               style={{
                 width: "100%",
                 maxWidth: "500px",
@@ -69,17 +70,17 @@ const LargeHome = () => {
         </div>
       </div>
 
-      <section id="services" className="py-5 bg-light">
-        <Services />
+      {/* <section id="services" className="py-5 bg-light">
+        <SmallServices />
       </section>
       <section id="about" className="py-5">
         <Info />
       </section>
       <CardSlider />
       <Fifth />
-      <Btmnav />
+      <Btmnav /> */}
     </div>
   );
 };
 
-export default LargeHome;
+export default SmallHome;
