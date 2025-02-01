@@ -6,7 +6,7 @@ import  Btmnav  from "@/components/btmnav";
 import  CardSlider  from "@/components/cardslider";
 import { Hero } from "@/components/Hero";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <Container>
       {/* Hero Section */}

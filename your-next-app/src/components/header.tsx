@@ -1,7 +1,7 @@
 "use client";
 
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
@@ -12,11 +12,11 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   // Redirect the base path to "/home" if at the root
-  useEffect(() => {
-    if (pathname === "/") {
-      router.replace("/home");
-    }
-  }, [pathname, router]);
+  // useEffect(() => {
+  //   if (pathname === "/" || pathname === "/") {
+  //     router.replace("/home");
+  //   }
+  // }, [pathname, router]);
 
   // Toggle the dropdown menu
   const toggleMenu = () => {
@@ -43,7 +43,9 @@ const Header = () => {
   const isContactPage = pathname === "/contact";
 
   return (
-    <header>
+    <>
+    
+    <header>  
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container d-flex justify-content-between align-items-center">
           <Link href="/home" className="navbar-brand">
@@ -145,6 +147,7 @@ const Header = () => {
         </div>
       </nav>
     </header>
+  </>
   );
 };
 
