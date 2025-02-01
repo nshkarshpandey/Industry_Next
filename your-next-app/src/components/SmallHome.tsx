@@ -1,7 +1,9 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
-import Image from "next/image";
+
+import HeroBanner from './HeroBanner';
+
 // import CardSlider from "./cardslider";
 // import SmallServices from "./SmallServices";
 // import Info from "./info";
@@ -51,21 +53,7 @@ const SmallHome = () => {
           </div>
 
           <div className="col-md-6 d-flex justify-content-center align-items-center pt-2">
-            <Image
-              src="/images/banner.png"
-              alt=""
-              id="home-img-1"
-              layout="responsive"
-              width={16}
-              height={9}
-             
-              style={{
-                width: "100%",
-                maxWidth: "500px",
-                alignSelf: "left",
-                height: "auto",
-              }}
-            />
+           <HeroBanner/>
           </div>
         </div>
       </div>
