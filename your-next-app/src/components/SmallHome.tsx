@@ -34,22 +34,6 @@ const SmallHome = () => {
             >
               Enquire Now
             </Button>
-            {/* <Image
-              src="/images/home-img-1.png"
-              alt=""
-              layout="responsive"
-              width={16}
-              height={9}
-              id="home-img-1"
-              loading="eager"
-              style={{
-                width: "100%",
-                maxWidth: "500px",
-                alignSelf: "left",
-                marginTop: "80px",
-                height: "auto",
-              }}
-            /> */}
           </div>
 
           <div className="col-md-6 d-flex justify-content-center align-items-center pt-2">

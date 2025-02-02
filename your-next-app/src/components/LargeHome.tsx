@@ -1,8 +1,9 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
-import Image from "next/image";
+// import Image from "next/image";
 import HeroBanner from './HeroBanner';
+import Ban_2 from "./Ban_2";
 
 const LargeHome = () => {
   return (
@@ -27,24 +28,7 @@ const LargeHome = () => {
             >
               Enquire Now
             </Button>
-            <Image
-              src="/images/home-img-1.png"
-              alt=""
-              layout="responsive"
-              width={16}
-              height={9}
-              id="home-img-1"
-              
-              style={{
-                position : "relative",
-                left: '-51px',
-                width: "100%",
-                maxWidth: "500px",
-                alignSelf: "left",
-                marginTop: "80px",
-                height: "auto",
-              }}
-            />
+            < Ban_2 />
           </div>
 
           <div className="col-md-6 d-flex justify-content-center align-items-center pt-2">

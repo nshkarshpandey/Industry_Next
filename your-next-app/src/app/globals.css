@@ -386,6 +386,10 @@ background-color: #D68E00 !important;
         #home-img-1 {
           margin-top: 46px !important;
         }
+
+        .ban-2{
+          display: none;
+        }
 }
 
 
