@@ -1,18 +1,18 @@
-"use client"; // Required for useState and useEffect in Next.js (App Router)
+"use client"; // Required for useState in Next.js (App Router)
 
 import React, { useState } from "react";
 import styles from "./popupform.module.css";
 
-type PopupFormProps = {
-  onClose: () => void;
-};
+interface PopupFormProps {
+  onClose: () => void; // ✅ Define prop type
+}
 
 const PopupForm: React.FC<PopupFormProps> = ({ onClose }) => {
-  const [isOpen, setIsOpen] = useState<boolean>(true); // Starts open
+  const [isOpen, setIsOpen] = useState(true); // ✅ Start with open popup
 
   const handleClose = () => {
     setIsOpen(false);
-    onClose(); // Notify parent to show content
+    onClose(); // ✅ Notify parent (HomePage) to remove popup
   };
 
   return (
@@ -25,14 +25,16 @@ const PopupForm: React.FC<PopupFormProps> = ({ onClose }) => {
           <h2>Enquire Now</h2>
           <form>
             <div className={styles.formGroup}>
-              <label htmlFor="name">Name</label>
-              <input id="name" type="text" placeholder="Enter your name" required />
+              <label>Email</label>
+              <input type="email" placeholder="Enter your email" required />
             </div>
             <div className={styles.formGroup}>
-              <label htmlFor="number">Number</label>
-              <input id="number" type="tel" placeholder="Enter your number" required />
+              <label>Contact Number</label>
+              <input type="tel" placeholder="Enter your number" required />
             </div>
-            <button type="submit" className={styles.submitBtn}>Submit</button>
+            <button type="submit" className={styles.submitBtn} onClick={handleClose}>
+              Submit
+            </button>
           </form>
         </div>
       </div>
